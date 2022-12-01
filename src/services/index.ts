@@ -13,6 +13,7 @@ export const repoName = s[s.length - 1]
 
 // 验证Token
 export function verifyToken(token: string) {
+    return ;//t
   return http.get(`/users/${authorName}`, {
     headers: {
       Authorization: `token ${token.trim()}`
