@@ -1,12 +1,12 @@
 <div class="fixbar">
-  <div
+  <!--div
     class="wrapper dark-bg dark-border-color dark-action-hover"
     nz-dropdown
     [nzDropdownMenu]="menu"
     nzPlacement="topLeft"
   >
     <img src="assets/img/theme.svg" />
-  </div>
+  </div-->
   <nz-dropdown-menu #menu="nzDropdownMenu">
     <ul nz-menu nzSelectable>
       <li
@@ -34,7 +34,7 @@
       <i class="iconfont iconchuangjian"></i>
     </div>
   </span>
-  
+
   <span *ngIf="showCollapse" nz-tooltip [nzTooltipTitle]="collapsed ? $t('_collapse') : $t('_put')">
     <div class="wrapper dark-bg dark-border-color dark-action-hover" (click)="collapse()">
       <i class="iconfont iconweibiaoti25 collapse" [class.active]="collapsed"></i>
@@ -77,7 +77,7 @@
       <img class="iconfont" src="assets/img/ua.svg" *ngIf="!language || language === 'en'">
     </div>
   </span>
-  
+
   <div class="wrapper dark-bg dark-border-color dark-action-hover" (click)="goTop()">
     <i class="iconfont iconjiantouarrow483 arrow"></i>
   </div>
