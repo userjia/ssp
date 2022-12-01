@@ -76,34 +76,34 @@ import { CardComponent } from '../components/card/index.component'
 import { MoveSiteComponent } from '../components/move-site/index.component'
 
 const appRoutes: Routes = [
-  { 
-    path: 'sim',
-    component: SimComponent,
-  },
-  { 
+  {
     path: 'side',
     component: SideComponent,
   },
-  { 
+  {
+    path: 'sim',
+    component: SimComponent,
+  },
+  {
     path: 'shortcut',
     component: ShortcutComponent,
   },
-  { 
+  {
     path: 'light',
     component: LightComponent,
     data: {
       renderLinear: true
     }
   },
-  { 
+  {
     path: 'app',
     component: WebpComponent,
   },
-  { 
+  {
     path: 'admin',
     component: AdminComponent,
   },
-  { 
+  {
     path: 'system',
     component: SystemComponent,
     children: [
