@@ -2,8 +2,7 @@ name: Build web
 on:
   push:
     branches:
-      - master
-      - main
+      - ssp
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,5 +22,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        BRANCH: gh-pages
+        BRANCH: ssp
         FOLDER: dist
