@@ -1,8 +1,5 @@
 name: Build web
-on:
-  push:
-    branches:
-      - ssp
+
 jobs:
   build:
     runs-on: ubuntu-latest
